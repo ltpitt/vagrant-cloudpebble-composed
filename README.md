@@ -28,3 +28,19 @@ Limitations
 - Pebble SSO is not available; only local accounts work.
 - Websocket installs are not available because pebble SSO is not available
 - You'll have to change things manually if 192.168.99.100 isn't right.
+
+
+Notes
+-----------
+
+vagrant init ole/stretch64  
+vagrant up  
+sudo apt-get install git  
+sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose  
+sudo chmod +x /usr/local/bin/docker-compose  
+git clone https://github.com/pebble/cloudpebble-composed  
+cd cloudpebble-composed  
+git clone https://github.com/pebble/cloudpebble.git  
+git clone https://github.com/pebble/cloudpebble-qemu-controller.git  
+git clone https://github.com/pebble/cloudpebble-ycmd-proxy.git  
+git clone https://github.com/Valloric/ycmd.git && cd /ycmd && git reset --hard c5ae6c2915e9fb9f7c18b5ec9bf8627d7d5456fd && git submodule update --init --recursive && ./build.sh --clang-completer

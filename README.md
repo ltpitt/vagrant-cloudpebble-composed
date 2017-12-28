@@ -34,9 +34,9 @@ Notes
 -----------
 
 # Install Ubuntu using Vagrant (if you need also to install Vagrant: https://www.vagrantup.com/intro/getting-started/install.html)  
-`vagrant init ubuntu/xenial64`
-`vagrant up`
-`vagrant ssh`  
+`vagrant init ubuntu/xenial64`  
+`vagrant up`  
+`vagrant ssh`   
 
 IMPORTANT: remember to add RAM to the VM, I've had success with 6GB but I didn't try other values. Default value WILL NOT WORK  
 

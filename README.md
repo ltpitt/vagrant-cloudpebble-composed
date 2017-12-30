@@ -1,7 +1,7 @@
 Vagrant Cloudpebble Composed
 ====================
 
-This repo contains an howto (and soon a script) to install the key components of CloudPebble as submodules into a Vagrant Linux VM. It also contains a `docker-compose` file that will assemble all of them into something that runs like a
+This repo contains how to (and soon an install script too) install the key components of CloudPebble as submodules into a Vagrant Linux VM. It also contains a `docker-compose` file that will assemble all of them into something that runs like a
 real CloudPebble instance.
 
 Getting Started

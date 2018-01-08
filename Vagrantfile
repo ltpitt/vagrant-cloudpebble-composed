@@ -42,13 +42,10 @@ git clone https://github.com/ltpitt/cloudpebble-ycmd-proxy.git
 cd cloudpebble/ext
 git clone https://github.com/pebble/pebblejs.git
 
-
 cd /home/ubuntu/cloudpebble-composed
 sed -i 's/10.0.2.15/172.17.0.1/g' docker-compose.yml
-sed -i 's/ENV FIRMWARE_VERSION 3.11/ENV FIRMWARE_VERSION 4.3/g' cloudpebble-qemu-controller/Dockerfile
-# Then open a terminal and cd to cloudpebble-composed dir.
-
 chmod u+x dev_setup.sh
+
 #TODO need to update node version, nodejs gpg keys?
 sed -i 's/NODE_VERSION=4.2.3/NODE_VERSION=4.7.0/g' cloudpebble/Dockerfile
 echo "adding GPG keys"
@@ -64,7 +61,5 @@ SCRIPT
   config.vm.provision "shell", run: "always" do |s|
     s.inline = "cd /home/ubuntu/cloudpebble-composed && sudo docker-compose up -d"
   end
-
-
 
 end

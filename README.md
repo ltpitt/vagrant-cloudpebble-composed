@@ -13,25 +13,17 @@
 
 
 ## Automatic installation using Vagrant
-
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
+WARNING: patience and a cup of coffee are needed
+`git clone https://github.com/ltpitt/vagrant-cloudpebble-composed.git && cd vagrant-cloudpebble-composed && vagrant up`
 
 ## Manual installation
 
 ### Install Ubuntu using Vagrant
-```vagrant init ubuntu/xenial64
-vagrant up
-vagrant ssh```
+NOTE: you do not need to clone the repo if you want to install manually  
+
+`vagrant init ubuntu/xenial64`
+`vagrant up`
+`vagrant ssh`
 
 IMPORTANT: remember to add RAM to the VM, I've had success with 2GB but I didn't try other values. Default value WILL NOT WORK
 

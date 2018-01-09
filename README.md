@@ -1,10 +1,6 @@
 # Cloud Pebble local installer / Vagrant machine
 > This repo contains how to manually install the key components of CloudPebble as submodules into a Vagrant Linux VM. It also contains a `docker-compose` file that will assemble all of them into something that runs like a real CloudPebble instance.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 ## Limitations
 
 - Pebble SSO is not available; only local accounts work.
@@ -33,9 +29,9 @@ edit autoexec.bat
 ## Manual installation
 
 ### Install Ubuntu using Vagrant
-`vagrant init ubuntu/xenial64`
-`vagrant up`
-`vagrant ssh`
+```vagrant init ubuntu/xenial64
+vagrant up
+vagrant ssh```
 
 IMPORTANT: remember to add RAM to the VM, I've had success with 2GB but I didn't try other values. Default value WILL NOT WORK
 

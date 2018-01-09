@@ -13,7 +13,7 @@
 
 
 ## Automatic installation using Vagrant
-WARNING: patience and a cup of coffee are needed
+WARNING: patience and a cup of coffee are needed  
 `git clone https://github.com/ltpitt/vagrant-cloudpebble-composed.git && cd vagrant-cloudpebble-composed && vagrant up`
 
 ## Manual installation

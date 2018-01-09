@@ -21,11 +21,11 @@ WARNING: patience and a cup of coffee are needed
 ### Install Ubuntu using Vagrant
 NOTE: you do not need to clone the repo if you want to install manually  
 
-`vagrant init ubuntu/xenial64`
-`vagrant up`
-`vagrant ssh`
+`vagrant init ubuntu/xenial64`  
+`vagrant up`  
+`vagrant ssh`  
 
-IMPORTANT: remember to add RAM to the VM, I've had success with 2GB but I didn't try other values. Default value WILL NOT WORK
+IMPORTANT: remember to add RAM to the VM, I've had success with 2GB but I didn't try other values, default value WILL NOT WORK
 
 ### Remove Docker IF installed
 `sudo apt-get remove docker docker-engine docker.io -y`
@@ -75,7 +75,7 @@ Point your web browser to http://localhost:8080
 
 ## Meta
 
-Davide Nastri – [@YourTwitter](https://twitter.com/ltpitt) – d.nastri@gmail.com
+Davide Nastri – [@pitto](https://twitter.com/pitto) – d.nastri@gmail.com
 
 Distributed under the GPL license. See ``LICENSE`` for more information.
 

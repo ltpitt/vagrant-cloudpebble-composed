@@ -46,7 +46,7 @@ If everything went fine you should see the Docker "Hello World" and you can proc
 `git clone https://github.com/ltpitt/vagrant-cloudpebble-composed.git && cd vagrant-cloudpebble-composed && git clone https://github.com/ltpitt/cloudpebble.git && git clone https://github.com/ltpitt/cloudpebble-qemu-controller.git && git clone https://github.com/ltpitt/cloudpebble-ycmd-proxy.git`
 
 ### Install PebbleJs
-`cd cloudpebble/ext && git clone https://github.com/pebble/pebblejs.git cloudpebble/ext && cd ../`
+`cd cloudpebble/ext && git clone https://github.com/pebble/pebblejs.git cloudpebble/ext && cd ../../`
 
 ### Be sure that you are in vagrant-cloudpebble-composed dir and run
 `sudo chmod +x dev_setup.sh && sudo ./dev_setup.sh`
@@ -66,7 +66,7 @@ If everything went fine you should see the Docker "Hello World" and you can proc
 
 ## How to use
 
-Point your web browser to http://localhost:8080
+Point your web browser to http://localhost
 
 ## Release History
 

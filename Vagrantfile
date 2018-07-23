@@ -7,8 +7,11 @@ load include_vagrantfile if File.exist?(include_vagrantfile)
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
 
-  config.vm.network "forwarded_port", guest: 80, host:8080, protocol: "tcp"
-  config.vm.network "forwarded_port", guest: 80, host:8080, protocol: "udp"
+  config.vm.network "forwarded_port", guest: 80, host:80, protocol: "tcp"
+  config.vm.network "forwarded_port", guest: 80, host:80, protocol: "udp"
+  config.vm.network "forwarded_port", guest: 8002, host:8002, protocol: "tcp"
+  config.vm.network "forwarded_port", guest: 8003, host:8003, protocol: "udp"
+
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "cloudpebble"

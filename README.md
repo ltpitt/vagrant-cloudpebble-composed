@@ -15,7 +15,10 @@
 ## Automatic installation using Vagrant
 WARNING: patience and a cup of coffee are needed :)  
 
-`git clone https://github.com/ltpitt/vagrant-cloudpebble-composed.git && cd vagrant-cloudpebble-composed && vagrant up`
+`git clone https://github.com/ltpitt/vagrant-cloudpebble-composed.git && cd vagrant-cloudpebble-composed && vagrant up`  
+
+## How to use it
+Simply access from your host machine via browser http://localhost
 
 ## Manual installation
 

@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "cloudpebble"
-    vb.memory = 4048
+    vb.memory = 2048
     vb.cpus = 2
     #vb.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
 	vb.gui = true

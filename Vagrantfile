@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "cloudpebble"
-    vb.memory = 2048
+    vb.memory = 4048
     vb.cpus = 2
     #vb.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
 	vb.gui = true
@@ -49,7 +49,7 @@ cd cloudpebble/ext
 git clone https://github.com/pebble/pebblejs.git
 
 cd ~/cloudpebble-composed
-sed -i 's/10.0.2.15/172.17.0.1/g' docker-compose.yml
+#sed -i 's/10.0.2.15/172.17.0.1/g' docker-compose.yml
 chmod u+x dev_setup.sh
 
 #TODO need to update node version, nodejs gpg keys?

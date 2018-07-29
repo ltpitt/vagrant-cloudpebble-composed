@@ -26,14 +26,14 @@ Vagrant.configure("2") do |config|
 
   # Preparing the Vagrant box using a provisioning script that will install CloudPebble and all its dependencies
   $provisioningscript = <<SCRIPT
-cd /home/ubuntu/
+cd ~/
 sudo apt-get remove docker docker-engine docker.io || true
 sudo apt-get update
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get update
-sudo apt-get install docker-ce
+sudo apt-get install docker-ce -y
 sudo docker run hello-world
 sudo apt-get install docker-compose -y
 sudo apt remove nodejs npm || true
@@ -48,7 +48,7 @@ git clone https://github.com/ltpitt/cloudpebble-ycmd-proxy.git
 cd cloudpebble/ext
 git clone https://github.com/pebble/pebblejs.git
 
-cd /home/ubuntu/cloudpebble-composed
+cd ~/cloudpebble-composed
 sed -i 's/10.0.2.15/172.17.0.1/g' docker-compose.yml
 chmod u+x dev_setup.sh
 
@@ -65,7 +65,7 @@ SCRIPT
 
   # Always run docker-compose up on vagrant up
   config.vm.provision "shell", run: "always" do |s|
-    s.inline = "cd /home/ubuntu/cloudpebble-composed && sudo docker-compose up -d"
+    s.inline = "cd ~/cloudpebble-composed && sudo docker-compose up -d"
   end
 
 end

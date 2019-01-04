@@ -1,5 +1,6 @@
 #!/bin/bash
 # Move patch for https://github.com/ltpitt/vagrant-cloudpebble-composed/issues/2
+mv ycmdDockerfile cloudpebble-ycmd-proxy/Dockerfile
 mv cloudpebbleDockerfile cloudpebble/Dockerfile
 # Run the general build.
 docker-compose build

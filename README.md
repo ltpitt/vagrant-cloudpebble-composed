@@ -1,3 +1,10 @@
+# Notice  
+At the moment this code is not working and no solution seems to be available:  
+https://github.com/ltpitt/vagrant-cloudpebble-composed/issues/2  
+
+It you need to quickly setup a local Pebble SDK I suggest you to use:  
+https://github.com/ltpitt/vagrant-pebble-sdk
+
 # Cloud Pebble local installer / Vagrant machine
 > This repo contains how to manually install the key components of CloudPebble as submodules into a Vagrant Linux VM. It also contains a `docker-compose` file that will assemble all of them into something that runs like a real CloudPebble instance. A big thank you from me and the whole Pebble community to the *awesome* Katharine Berry - (<https://twitter.com/KatharineBerry>) for making this possible.  
 

@@ -86,7 +86,7 @@ Point your web browser to http://localhost
 
 ## Meta
 
-Davide Nastri – [@pitto](https://twitter.com/pitto) – d.nastri@gmail.com
+Davide Nastri – d.nastri@gmail.com
 
 Distributed under the GPL license. See ``LICENSE`` for more information.
 
